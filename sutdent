@@ -1,0 +1,28 @@
+include<iostream>
+using namespace std ;
+class student 
+{
+public :
+string name ;
+int rollno ;
+int marks ;
+
+student (string name , int rollno , int marks)
+{
+this->name= name;
+this->rollno= rollno;
+this->marks = marks;
+}
+void display()
+{
+cout<<"NAME OF STUDENT :-"<<this->name<<endl;
+cout<<"ROLL NO OF STUDENT:-"<<this-> rollno<<endl;
+cout<<"MARKS OF THE STUDENT:-"<<this->marks<<endl;
+}
+};
+int main()
+{
+student s1("RAM",101,85);
+s1.display();
+return 0;
+}
