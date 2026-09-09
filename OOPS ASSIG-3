@@ -1,0 +1,37 @@
+  GNU nano 8.7.1                                                              student.cpp                                                                       
+#include<iostream>
+using namespace std ;
+class student 
+{
+public :
+string name ;
+int rollno ;
+int marks ;
+
+student (string name , int rollno , int marks)
+{
+this->name= name;
+this->rollno= rollno;
+this->marks = marks;
+}
+void display()
+{
+cout<<"NAME OF STUDENT :-"<<this->name<<endl;
+cout<<"ROLL NO OF STUDENT:-"<<this-> rollno<<endl;
+cout<<"MARKS OF THE STUDENT:-"<<this->marks<<endl;
+}
+};
+int main()
+{
+student s1("RAM",101,85);
+student s2("SHYAM",102,65);
+s1.display();
+s2.display();
+return 0;
+}
+
+
+
+                                                                       [ Read 30 lines ]
+^G Help         ^O Write Out    ^F Where Is     ^K Cut          ^T Execute      ^C Location     M-U Undo        M-A Set Mark    M-] To Bracket  M-B Previous
+^X Exit         ^R Read File    ^\ Replace      ^U Paste        ^J Justify      ^/ Go To Line   M-E Redo        M-6 Copy        ^B Where Was    M-F Next
