@@ -1,4 +1,4 @@
-  GNU nano 8.7.1                                                              student.cpp                                                                       
+                                                                      
 #include<iostream>
 using namespace std ;
 class student 
