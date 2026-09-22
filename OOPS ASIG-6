@@ -1,0 +1,27 @@
+include<iostream>
+using namespace std ;
+class employee1
+{
+public:
+int id;
+string name;
+float salary ;
+employee1(int i , string n, float s)
+{
+id=i;
+name=n;
+salary=s;
+cout<<"CONSTRUCTOR IS CALLED !!!!"<<endl;
+}
+~employee1()
+{
+cout<<"DISTRUCTOR CALLED"<<endl;
+}
+};
+int main()
+{
+employee1 e1(101,"arjun",20120);
+employee1 e2(102,"shyam",32532);
+employee1 e3(103,"ram",54254);
+return 0;
+}
