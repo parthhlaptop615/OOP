@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std ;
+class university 
+{
+public:
+string name;
+int age ;
+int contact;
+
+void display()
+{
+cout<<"NAME OF THE STUDENT"<<name<<endl;
+cout<<"AGE OF THE STUDENT"<<age<<endl;
+cout<<"CONTACT OF THE STUDENT"<<contact<<endl;
+}};
+
+class student : public university 
+{
+public:
+int roll;
+string branch;
+
+void show()
+{
+cout<<"ROLL NO OF STUDENT"<<roll<<endl;
+cout<<"BRANCH OF STUDENT"<<branch<<endl;
+}};
+int main()
+{
+student s1 ,s2;
+s1.name="prajval";
+s1.age=18;
+s1.contact=82909035;
+s1.roll=12;
+s1.branch="AIML";
+
+s2.name="virat";
+s2.age=18;
+s2.contact=8975456;
+s2.roll=27;
+s2.branch="AIML";
+
+cout<<"----------STUDENT 1 DETAILS------------"<<endl;
+s1.display();
+s1.show();
+cout<<"----------STUDENT 2 DETAILS--------------"<<endl;
+s2.display();
+s2.show();
+
+return 0 ;
+}
