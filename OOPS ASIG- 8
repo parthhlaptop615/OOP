@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std ;
+class person
+{
+public:
+int legs;
+int hands;
+int eyes;
+void display()
+{
+cout<<"LEGS"<<legs<<endl;
+cout<<"HANDS"<<hands<<endl;
+cout<<"eyes"<<eyes<<endl;
+}};
+class employee : public person
+{
+public:
+string name;
+int id;
+
+void show()
+{
+cout<<"NAME"<<name<<endl;
+cout<<"ID"<<id<<endl;
+}};
+class manager : public employee
+{
+public:
+string post;
+void get()
+{
+cout<<"POST"<<post<<endl;
+}};
+int main()
+{
+manager m1 ;
+cout<<"manager details"<<endl;
+m1.legs=2;
+m1.hands=2;
+m1.eyes=2;
+m1.name="prajval";
+m1.id=12;
+m1.post="ASSISTANt";
+
+m1.display();
+m1.show();
+m1.get();
+return 0 ;
+}
